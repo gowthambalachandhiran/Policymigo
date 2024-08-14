@@ -57,9 +57,29 @@ class ChatBot:
 
 
     def run_chat_interface(self):
+        st.markdown(
+        f"""
+        <style>
+        .main {{
+            background-image: url("https://www.insurancetrainingcenter.com/wp-content/uploads/2020/03/insurance-underwriting.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+        }}
+        .stMarkdown {{
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    
         st.markdown("""
-            <div style='text-align: center;'>
-                <h1>Welcome to PolicyPal</h1>
+            <div class='stMarkdown' style='text-align: center;'>
+                <h1>Welcome to Policymigo</h1>
                 <h3>Ask your questions regarding underwriting!!!!</h3>
             </div>
             """, unsafe_allow_html=True)

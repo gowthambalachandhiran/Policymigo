@@ -4,7 +4,7 @@ from chat_bot import ChatBot
 
 def main():
     try:
-        st.title("Document Search and Chat Interface")
+        
         
         # Initialize the vector store and load/create the vectorstore
         vector_store = VectorStore()
