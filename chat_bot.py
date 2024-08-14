@@ -96,12 +96,12 @@ class ChatBot:
             
             st.session_state.messages.append({"role": "assistant", "content": full_response})
             
-            with st.expander("View Reference Documents"):
-                if docs:
-                    st.write("### Reference Documents Used:\n")
-                    for i, doc in enumerate(docs):
-                        st.write(f"**Document {i+1}:**")
-                        st.write(doc.page_content)
-                        st.write("---")
-                else:
-                    st.write("No reference documents found.")
+            # with st.expander("View Reference Documents"):
+            #     if docs:
+            #         st.write("### Reference Documents Used:\n")
+            #         for i, doc in enumerate(docs):
+            #             st.write(f"**Document {i+1}:**")
+            #             st.write(doc.page_content)
+            #             st.write("---")
+            #     else:
+            #         st.write("No reference documents found.")
